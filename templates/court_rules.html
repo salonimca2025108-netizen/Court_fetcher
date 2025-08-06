@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Court Rules</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('/static/Photo5.avif') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+      .navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #004080; /* solid blue */
+    padding: 10px 20px;
+}
+
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .rules-container {
+            display: flex;
+            justify-content: center;
+            padding: 60px 20px 20px 20px;
+        }
+
+     .rules-box {
+    background-color: rgba(0, 0, 0, 0.6); /* dark transparent background */
+    padding: 30px;
+    max-width: 850px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rules-box h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.rules-box ul {
+    padding-left: 20px;
+}
+
+.rules-box ul li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: #f0f0f0;
+}
+
+
+
+        .back-button {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .back-button a {
+            background-color: #004080;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .back-button a:hover {
+            background-color: #0066cc;
+        }
+
+        @media (max-width: 768px) {
+            .rules-box {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="/">Cases</a>
+        <a href="/logs">History</a>
+        <a href="/about">About</a>
+        <a href="/court-rules">Court Rules</a>
+    </div>
+
+    <!-- Rules Section -->
+    <div class="rules-container">
+        <div class="rules-box">
+            <h2>Basic Court Rules</h2>
+            <ul>
+                <li>All parties must arrive at the court on time.</li>
+                <li>Electronic devices should be switched off or silenced inside the courtroom.</li>
+                <li>Respect the judge, court staff, and legal professionals at all times.</li>
+                <li>Only speak when permitted by the judge or court personnel.</li>
+                <li>Present all necessary documents in an organized manner.</li>
+                <li>Dress appropriately in formal or respectful attire.</li>
+                <li>Maintain silence during court proceedings unless addressed.</li>
+                <li>Do not record or photograph court proceedings without permission.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button">
+        <a href="/">← Back to Home</a>
+    </div>
+
+</body>
+</html>

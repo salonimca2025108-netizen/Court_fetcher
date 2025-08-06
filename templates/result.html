@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Result</h2>
+ 
+
+{% if case and 'Error' not in case %}
+    <p><strong>Case Title:</strong> {{ case['Case Title'] }}</p>
+    <p><strong>Status:</strong> {{ case['Status'] }}</p>
+    <!-- Add more fields as needed -->
+
+    {% if orders %}
+        <h3>Recent Orders</h3>
+        <ul>
+            {% for order in orders %}
+                <li>{{ order.date }}: {{ order.order }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% else %}
+    <p style="color:red;">{{ case['Error'] }}</p>
+{% endif %}
+
+<a href="/">← Back to Search</a>
+</body>
+</html>
